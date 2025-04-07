@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+    --font-decasa: Deca, serif;
+    --font-menu: Cornerstone, sans-serif;
+    --color-decasa: #61412c;
+}
