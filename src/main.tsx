@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
+import PizzaView from "./views/PizzaView.tsx";
 
 const router = createBrowserRouter([
   {
@@ -11,7 +12,11 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <App />,
+        element: <PizzaView />,
+      },
+      {
+        path: "/home",
+        element: <PizzaView />,
       },
     ],
   },
