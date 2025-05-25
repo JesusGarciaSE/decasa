@@ -2,14 +2,14 @@ import MenuItem from "./MenuItem";
 import { IFoodList } from "../models/ComponentModels";
 import React from "react";
 
-const DipList:React.FC<IFoodList> = ({className, title, foodList: dips}) => {
+const FoodList: React.FC<IFoodList> = ({ className, title, foodList }) => {
   return (
-    <div className={`${className}  flex flex-col gap-4`}>
-      <h2 className="text-2xl font-semibold text-decasa">{title}</h2>
-      <ul className="flex flex-col gap-2">
-        {dips.map((dip, index) => (
+    <div className={`${className}`}>
+      <h2 className='text-2xl font-semibold text-decasa pb-4'>{title}</h2>
+      <ul className='flex flex-col gap-3'>
+        {foodList.map((food, index) => (
           <li key={index}>
-            <MenuItem item={dip} />
+            <MenuItem item={food} />
           </li>
         ))}
       </ul>
@@ -17,4 +17,4 @@ const DipList:React.FC<IFoodList> = ({className, title, foodList: dips}) => {
   );
 };
 
-export default DipList;
+export default FoodList;

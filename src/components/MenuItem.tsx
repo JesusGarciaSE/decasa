@@ -6,7 +6,7 @@ interface MenuItemProps {
 
 const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
   return (
-    <div className="mt-4 first:mt-0 text-decasa">
+    <div className="text-decasa">
       <h2 className="font-menu text-lg whitespace-pre">
         <span>{item.name} </span>
         <span>{item.price}</span>

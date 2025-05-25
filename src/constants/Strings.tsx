@@ -22,6 +22,7 @@ export const PIZZA_NAMES = {
     hot: "Hot Honey Pepperoni",
     truffle: "Truffle",
     veggie: "Veggie",
+    western: "Western",
     marina: "Marina",
     bianca: "Bianca"
 }
@@ -33,6 +34,7 @@ export const PIZZA_TOPPINGS = {
     hot: "tomato sauce, mozzarella, pepperoni, fresh jalapeños, decasa hot honey, red pepper flakes",
     truffle: "mozzarella, local italian sausage, blend of muchrooms, black truffle oil, parmigiano reggiano, red pepper flakes",
     veggie: "tomato sauce, mozzarella, blend of mushrooms, mixed peppers, shallots",
+    western: "tomato sauce, mozzarella, Midland Meat Co. ground beef, fresh jalapeños",
     marina: "tomato sauce, fresh garlic, basil, oregano, evoo",
     bianca: "mozzarella, parmigiano, basil, evoo"
 }

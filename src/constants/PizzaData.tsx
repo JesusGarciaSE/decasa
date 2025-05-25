@@ -33,6 +33,11 @@ export const PIZZA_DATA: IMenuItem[] = [
         price: 18
     },
     {
+        name: PIZZA_NAMES.western,
+        ingrediants: PIZZA_TOPPINGS.western,
+        price: 21
+    },
+    {
         name: PIZZA_NAMES.marina,
         ingrediants: PIZZA_TOPPINGS.marina,
         price: 17
