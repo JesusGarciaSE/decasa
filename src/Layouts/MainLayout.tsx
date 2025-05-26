@@ -2,10 +2,11 @@ import { Outlet } from "react-router";
 import decasaman from "../assets/decasaman.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
 
 const MainLayout = () => {
   return (
-    <div className='relative flex flex-col h-screen min-h-screen items-center justify-center overflow-x-scroll'>
+    <div className='relative flex flex-col h-screen min-h-screen items-center overflow-x-scroll'>
       <img
         src={decasaman}
         alt='Background'
@@ -14,6 +15,7 @@ const MainLayout = () => {
         }
       />
       <Header />
+      <NavBar />
       <div className='w-full h-auto grow'>
         <Outlet />
       </div>
