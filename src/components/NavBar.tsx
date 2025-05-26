@@ -2,12 +2,12 @@ import { NavLink } from "react-router";
 
 const NavBar = () => {
   return (
-    <div className='h-auto w-full flex flex-row items-center justify-center gap-4 text-decasa font-decasa text-xl'>
+    <div className='h-auto w-full p-3 flex flex-row items-center justify-center gap-4 text-decasa font-decasa text-xl'>
       <NavLink
         to='/'
         className={({ isActive }) =>
           isActive
-            ? "underline underline-offset-4 decoration-decasa decoration-2"
+            ? "underline underline-offset-4 decoration-decasa decoration-2 font-bold"
             : ""
         }
       >
@@ -17,7 +17,7 @@ const NavBar = () => {
         to='/about'
         className={({ isActive }) =>
           isActive
-            ? "underline underline-offset-4 decoration-decasa decoration-2"
+            ? "underline underline-offset-4 decoration-decasa decoration-2 font-bold"
             : ""
         }
       >
@@ -27,7 +27,7 @@ const NavBar = () => {
         to='/menu'
         className={({ isActive }) =>
           isActive
-            ? "underline underline-offset-4 decoration-decasa decoration-2"
+            ? "underline underline-offset-4 decoration-decasa decoration-2 font-bold"
             : ""
         }
       >

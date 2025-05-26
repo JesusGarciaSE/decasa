@@ -6,7 +6,7 @@ import NavBar from "../components/NavBar";
 
 const MainLayout = () => {
   return (
-    <div className='relative flex flex-col h-screen min-h-screen items-center overflow-x-scroll'>
+    <div className='relative flex flex-col h-screen min-h-screen items-center overflow-y-scroll'>
       <img
         src={decasaman}
         alt='Background'

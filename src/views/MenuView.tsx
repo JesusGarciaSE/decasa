@@ -20,7 +20,12 @@ const MenuView = () => {
         {routes.map((route) => (
           <div
             key={route.key}
-            className='p-3 text-decasa font-decasa text-lg font-semibold cursor-pointer'
+            className={
+              "p-3 text-decasa font-decasa text-lg cursor-pointer " +
+              (activeTab === route.key
+                ? "underline underline-offset-4 decoration-decasa decoration-2 font-semibold"
+                : "")
+            }
             onClick={() => changeTab(route.key)}
           >
             {route.label}
