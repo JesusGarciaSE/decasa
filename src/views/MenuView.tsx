@@ -1,6 +1,7 @@
 import { useState } from "react";
 import FoodList from "../components/FoodList";
 import { MENU_DATA } from "../constants/MenuData";
+import { PIZZA_DESCRIPTIONS } from "../constants/Strings";
 
 const MenuView = () => {
   const routes = [
@@ -15,7 +16,7 @@ const MenuView = () => {
   };
 
   return (
-    <div className='h-auto w-full items-center flex flex-col gap-4 p-4 pt-0'>
+    <div className='h-auto w-full items-center flex flex-col gap-4 px-4'>
       <div className='h-auto w-full flex justify-between gap-4'>
         {routes.map((route) => (
           <div
@@ -45,6 +46,13 @@ const MenuView = () => {
           }
         />
       </div>
+      <h1 className='font-[deca-serif] font-bold mt-6'>
+        {PIZZA_DESCRIPTIONS.size +
+          " | " +
+          PIZZA_DESCRIPTIONS.slices +
+          " | " +
+          PIZZA_DESCRIPTIONS.halves}
+      </h1>
     </div>
   );
 };

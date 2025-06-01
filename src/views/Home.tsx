@@ -1,6 +1,7 @@
 const Home = () => {
   return (
     <div className='h-full w-full p-4 flex flex-col gap-3'>
+      <h1 className='h-auto w-full text-center text-lg font-bold'>Welcome to Decasa! </h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus
         ex sapien vitae pellentesque sem placerat. In id cursus mi pretium
