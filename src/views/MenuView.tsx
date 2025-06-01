@@ -15,8 +15,8 @@ const MenuView = () => {
   };
 
   return (
-    <div className='h-auto w-full items-center flex flex-col gap-4'>
-      <div className='flex gap-4'>
+    <div className='h-auto w-full items-center flex flex-col gap-4 p-4 pt-0'>
+      <div className='h-auto w-full flex justify-between gap-4'>
         {routes.map((route) => (
           <div
             key={route.key}
@@ -32,10 +32,10 @@ const MenuView = () => {
           </div>
         ))}
       </div>
-      <div className='flex flex-col'>
+      <div className='h-auto w-full flex flex-col px-10'>
         <FoodList
           title={routes.find((route) => route.key === activeTab)!.label}
-          className={"px-10 py-4"}
+          className={""}
           foodList={
             activeTab === "pizza"
               ? MENU_DATA.pizzas
