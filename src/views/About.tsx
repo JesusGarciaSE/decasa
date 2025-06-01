@@ -1,8 +1,8 @@
-import ImageCarousel from "../components/Carousel";
+import ImageCarousel from "../components/ImageCarousel";
 const About = () => {
   return (
     <div className='relative h-full w-full flex flex-col gap-3'>
-      <ImageCarousel className='max-h-60 md:max-h-100 w-full'></ImageCarousel>
+      <ImageCarousel className='max-h-60 w-full'></ImageCarousel>
       <div className="p-4">
         <h1 className="text-lg font-bold">Title </h1>
         <p>

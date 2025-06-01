@@ -4,4 +4,18 @@ import gerardo from "../assets/gerardo.jpg";
 import oven from "../assets/oven.jpg";
 import pizza from "../assets/pizza.jpg";
 
-export const AboutImageData = [calzone, family, gerardo, oven, pizza];
+import western from "../assets/western.jpg";
+
+export const ABOUT_IMAGES = [calzone, family, gerardo, oven, pizza];
+
+export const PIZZA_IMAGES = [
+  western,
+  western,
+  western,
+  western,
+  western,
+  western,
+  western,
+  western,
+  western,
+];

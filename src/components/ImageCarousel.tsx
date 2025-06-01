@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { AboutImageData } from "../constants/ImageData";
+import { ABOUT_IMAGES } from "../constants/ImageData";
 import { ICustomizableComponent } from "../models/ComponentModels";
 
 const responsive = {
@@ -36,7 +36,7 @@ const ImageCarousel: React.FC<ICustomizableComponent> = ({ className }) => {
         dotListClass='carousel-container'
         itemClass=''
       >
-        {AboutImageData.map((img, key) => (
+        {ABOUT_IMAGES.map((img, key) => (
           <img
             className='h-auto max-w-1/2 object-contain mx-auto'
             key={key}
