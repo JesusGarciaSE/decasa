@@ -17,7 +17,7 @@ const MenuView = () => {
 
   return (
     <div className='h-auto w-full items-center flex flex-col gap-4 px-4'>
-      <div className='h-auto w-full flex justify-between gap-4'>
+      <div className='h-auto w-full flex justify-between gap-4 md:justify-center'>
         {routes.map((route) => (
           <div
             key={route.key}

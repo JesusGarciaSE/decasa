@@ -2,7 +2,7 @@ import ImageCarousel from "../components/ImageCarousel";
 const About = () => {
   return (
     <div className='relative h-full w-full flex flex-col gap-3'>
-      <ImageCarousel className='max-h-60 w-full'></ImageCarousel>
+      <ImageCarousel className='h-60 w-full md:h-80'></ImageCarousel>
       <div className="p-4">
         <h1 className="text-lg font-bold">Title </h1>
         <p>

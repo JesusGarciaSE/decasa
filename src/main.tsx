@@ -5,7 +5,8 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import MainLayout from "./Layouts/MainLayout.tsx";
 import Home from "./views/Home.tsx";
 import MenuView from "./views/MenuView.tsx";
-import About from "./views/about.tsx";
+import About from "./views/About.tsx";
+import PasswordGate from "./views/PasswordGate.tsx";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <PasswordGate>
+      <RouterProvider router={router} />
+    </PasswordGate>
   </StrictMode>
 );

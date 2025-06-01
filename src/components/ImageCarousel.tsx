@@ -9,14 +9,14 @@ const responsive = {
   //   breakpoint: { max: 4000, min: 3000 },
   //   items: 5,
   // },
-  // desktop: {
-  //   breakpoint: { max: 3000, min: 1024 },
-  //   items: 3,
-  // },
-  // tablet: {
-  //   breakpoint: { max: 1024, min: 464 },
-  //   items: 1,
-  // },
+  desktop: {
+    breakpoint: { max: 1280, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 768 },
+    items: 1,
+  },
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
@@ -25,12 +25,12 @@ const responsive = {
 
 const ImageCarousel: React.FC<ICustomizableComponent> = ({ className }) => {
   return (
-    <div className='relative h-auto w-full'>
+    <div className={'relative ' + className}>
       <div className='absolute inset-0 bg-decasa opacity-25'></div>
       <Carousel
         responsive={responsive}
         showDots={true}
-        containerClass={className}
+        containerClass={'h-60 w-full md:h-80'}
         infinite={true}
         keyBoardControl={true}
         dotListClass='carousel-container'
@@ -38,7 +38,7 @@ const ImageCarousel: React.FC<ICustomizableComponent> = ({ className }) => {
       >
         {ABOUT_IMAGES.map((img, key) => (
           <img
-            className='h-auto max-w-1/2 object-contain mx-auto'
+            className='h-auto w-1/2 object-contain mx-auto bg-red-300'
             key={key}
             src={img}
           />
