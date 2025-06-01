@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import MainLayout from "./Layouts/MainLayout.tsx";
 import Home from "./views/Home.tsx";
 import MenuView from "./views/MenuView.tsx";
+import About from "./views/about.tsx";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <Home />,
+        element: <About />,
       },
       {
         path: "/menu",
